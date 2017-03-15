@@ -1,0 +1,27 @@
+{
+  "name": "lyric-reader",
+  "version": "1.0.0",
+  "description": "Progressive web app that reads lyrics from some music API using the speech synthesis API in the browser",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Lyric",
+    "Reader",
+    "JavaScript",
+    "Text",
+    "to",
+    "speech",
+    "PWA",
+    "Progressive",
+    "web",
+    "app"
+  ],
+  "author": "constsync",
+  "license": "MIT ",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

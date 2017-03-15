@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Editor generated files
+*.idea/
+*.vscode/
+*.swp/
+
+# Files added by Developers
+worklog.txt
