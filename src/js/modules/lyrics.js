@@ -1,12 +1,13 @@
-class Lyrics {
-  constructor () {
-    this.URI = '/mock/songs.json';
-  }
+class LyricDataType {
+    constructor () { 
+        this.URI = '/mock/songs.json';
+    }
 
-  getSongLyrics(artist, song) {
-    console.log('Getting lyrics for ${artist}, ${song}');
-  }
+    getLyrics (artist, song) {
+        console.log(`User search for ${artist} ${song}`);
+    }
 
 }
 
-export default Lyrics;
+export default LyricDataType;
+
