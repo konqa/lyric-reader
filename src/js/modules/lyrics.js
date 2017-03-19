@@ -1,4 +1,4 @@
-class LyricDataType {
+class SongManager {
     constructor () { 
         this.URI = '/mock/songs.json';
     }
@@ -9,5 +9,5 @@ class LyricDataType {
 
 }
 
-export default LyricDataType;
+export default SongManager;
 
