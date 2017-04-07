@@ -1,0 +1,21 @@
+Add all of the relevant tasks below to GitHub repo issues *.*
+I will soon add all of the things below to the issues tab in the GitHub repo when I have time :) 
+
+MVP features for Front-End of this app
+- Write logic to make a request to our mock.json file and log the response in the console 
+- Build out a base responsive UI that will show the text from the response below search area 
+- Get speech synthesis API working in the browser to read the response from that API call 
+- Add a service worker and a manifest.json to make this a progressive web app that can be added to homescreen
+- Add validation & Error handling to our search component protect if song does not exist && !input
+- Get a connection with an API that returns lyrics to a given song
+
+MVP features for API of this app
+- Write an API wrapper for a Lyrics API or write a WebScaper that will take song lyrics from a site for FE to consume
+- Deploy API to an AWS s3 instance 
+
+Current bugs that need to be fixed/things to add in/things todo 
+- Error in gulpfile that is messing up the watch task
+- Call search function when the user hits enter instead of making them have to click the button to search 
+- Add AutoPrefixer into our gulpfile 
+- Minify all JS files in our gulpfile
+- Pull in our dependencies directly from node_modules

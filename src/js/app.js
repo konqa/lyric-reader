@@ -1,16 +1,20 @@
-import testMod from './modules/reader';
-import SongManager from './modules/lyrics';
-
-const SM = new SongManager();
+import GetLyrics from './modules/lyrics';
 
 const artistField = document.getElementById('artist-name'),
    songField = document.getElementById('song-name'),
    searchBtn = document.getElementById('search-btn');
 
+function Song (artist, song) {
+  this.artist = artist;
+  this.song = song;
+}
+
 searchBtn.addEventListener('click', () => {
-  let artist = artistField.value;
-  let songName = songField.value;
-  SM.getLyrics(artist, songName);
+  let artist = artistField.value,
+    songName = songField.value,
+    searchQuery = new Song(artist, songName);
+
+  GetLyrics(searchQuery.artist, searchQuery.song);
   artistField.value = '';
   songField.value = '';
 });

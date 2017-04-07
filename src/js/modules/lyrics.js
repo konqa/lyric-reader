@@ -1,13 +1,6 @@
-class SongManager {
-    constructor () { 
-        this.URI = '/mock/songs.json';
-    }
+const getLyrics = function (artist, song) {
+    console.debug(`Getting lyrics for artist:${artist} song:${song}`);
+};
 
-    getLyrics (artist, song) {
-        console.log(`User search for ${artist} ${song}`);
-    }
-
-}
-
-export default SongManager;
+export default getLyrics;
 
