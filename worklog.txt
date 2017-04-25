@@ -8,6 +8,7 @@ MVP features for Front-End of this app
 - Add a service worker and a manifest.json to make this a progressive web app that can be added to homescreen
 - Add validation & Error handling to our search component protect if song does not exist && !input
 - Get a connection with an API that returns lyrics to a given song
+- Write returned lyrics to the DOM
 
 MVP features for API of this app
 - Write an API wrapper for a Lyrics API or write a WebScaper that will take song lyrics from a site for FE to consume

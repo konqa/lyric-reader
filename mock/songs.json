@@ -3,5 +3,11 @@
     "Artist": "TestArtist",
     "Song": "TestSong",
     "Lyrics": "The cow jumped over the moon"
+  },
+  
+  {
+    "Artist": "TestArtist2",
+    "Song": "TestSong2",
+    "Lyrics": "The cow jumped over the moon2"
   }
 ]

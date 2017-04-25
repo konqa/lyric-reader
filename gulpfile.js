@@ -30,10 +30,10 @@ gulp.task('babelit', () => {
 });
 
 gulp.task('css', () => {
-	console.log('css task')
+	console.log('css task');
 });
 
 gulp.task('watch', () => {
-    gulp.watch(paths.js, ['babelit', 'test']);
+    gulp.watch(paths.js, ['babelit']);
     gulp.watch(paths.css, ['css']);
 });
