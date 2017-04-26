@@ -8,10 +8,10 @@ const gulp = require('gulp'),
 	uglify = require('gulp-uglify');
 
 const paths = {
-	js: ['src/js/app.js',
-	 'src/js/modules/lyrics.js',
- 		'src/js/modules/reader.js'],
-	css: ['src/css/**/*.css']
+	js: ['client/src/js/app.js',
+	 'client/src/js/modules/lyrics.js',
+ 		'client/src/js/modules/reader.js'],
+	css: ['client/src/css/**/*.css']
 };
 
 const dist = 'dist';

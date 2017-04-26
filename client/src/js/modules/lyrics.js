@@ -1,8 +1,8 @@
 import readLyrics from './reader';
 
 const getLyrics = function (artist, song) {
-    const songStore = 'mock/songs.json';
-    const lyricsP = document.getElementById('lyrics');
+    const songStore = 'mock/songs.json',
+        lyricsP = document.getElementById('lyrics');
 
     fetch(songStore).then((response) => {
         return response.json();
@@ -21,4 +21,3 @@ const getLyrics = function (artist, song) {
 };
 
 export default getLyrics;
-
