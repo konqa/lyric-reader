@@ -4,19 +4,20 @@ const gulp = require('gulp'),
 	source = require('vinyl-source-stream'),
 	buffer = require('vinyl-buffer'),
 	concat = require('gulp-concat'),
-	concatCss = require('gulp-concat-css');
+	sass = require('gulp-sass');
 	uglify = require('gulp-uglify');
 
 const paths = {
 	js: ['client/src/js/app.js',
 	 'client/src/js/modules/lyrics.js',
  		'client/src/js/modules/reader.js'],
-	css: ['client/src/css/**/*.css']
+	styles: ['client/src/styles/app.scss',
+			'client/src/styles/pages/**/*.scss']
 };
 
 const dist = 'dist';
 
-gulp.task('default', ['babelit', 'css', 'watch']);
+gulp.task('default', ['babelit', 'styles', 'watch']);
 
 gulp.task('babelit', () => {
 	browserify(paths.js)
@@ -29,11 +30,15 @@ gulp.task('babelit', () => {
 	.pipe(gulp.dest(dist))
 });
 
-gulp.task('css', () => {
-	console.log('css task');
+gulp.task('styles', () => {
+	console.log('sass task.');
+	 return gulp.src(paths.styles)
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concat('bundle.css'))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', () => {
     gulp.watch(paths.js, ['babelit']);
-    gulp.watch(paths.css, ['css']);
+    gulp.watch(paths.css, ['styles']);
 });
