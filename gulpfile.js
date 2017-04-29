@@ -31,11 +31,10 @@ gulp.task('babelit', () => {
 });
 
 gulp.task('styles', () => {
-	console.log('sass task.');
 	 return gulp.src(paths.styles)
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('bundle.css'))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest(dist));
 });
 
 gulp.task('watch', () => {
