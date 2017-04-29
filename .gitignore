@@ -7,4 +7,6 @@ dist/
 *.vscode/
 *.swp/
 
-# Files added by Developers
+# Files/dirs added by Developers
+worklog.txt
+dist
